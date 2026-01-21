@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>List</h1>
+      </header>
+      <form action="" class="form-list">
+        <h3>Add To Do:</h3>
+        <div class="form-control">
+          <input type="text" id="input-list" placeholder="" />
+          <button type="submit"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </form>
+      <form class="edit-form">
+        <h3>Edit To Do</h3>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button type="submit">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </div>
+        <button id="cancel-edit-btn">Cancel</button>
+      </form>
+      <div class="tool-bar">
+        <div class="search">
+          <h4>Search:</h4>
+          <form>
+            <input type="text" id="search-input" placeholder="Search" />
+            <button id="erase-btn">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </form>
+        </div>
+        <div class="filter">
+          <h4>Filter:</h4>
+          <select name="" id="filter-select">
+            <option value="all">All</option>
+            <option value="Done">Done</option>
+            <option value="To do">To do</option>
+          </select>
+        </div>
+      </div>
+      <div id="todo-list">
+        <div class="todo">
+          <h2>A fazer</h2>
+          <button><i class="fa-solid fa-check"></i></button>
+          <button><i class="fa-solid fa-pen-to-square"></i></button>
+          <button><i class="fa-solid fa-ban"></i></button>
+        </div>
+        <div class="todo">
+          <h2>Alguma outra coisa</h2>
+          <button><i class="fa-solid fa-check"></i></button>
+          <button><i class="fa-solid fa-pen-to-square"></i></button>
+          <button><i class="fa-solid fa-ban"></i></button>
+        </div>
+        <div class="todo">
+          <h2>Alguma alguma outra coisa</h2>
+          <button><i class="fa-solid fa-check"></i></button>
+          <button><i class="fa-solid fa-pen-to-square"></i></button>
+          <button><i class="fa-solid fa-ban"></i></button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
